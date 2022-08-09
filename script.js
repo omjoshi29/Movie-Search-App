@@ -8,6 +8,7 @@ async function searchMovie() {
 
     if (input.length === 0) {
       movies.style.display = "none";
+      container.style.display = "none";
     }
 
     let res = await fetch(
