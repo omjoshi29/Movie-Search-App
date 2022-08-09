@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G E T &nbsp;&nbsp;m e&nbsp;&nbsp; C I N E M A</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- <center><button id="trending" onclick="window.open('trending.html','_self')">Trending Movies</button></center> -->
+    <div id="mainbox">
+        <h1>Search Movies</h1>
+        <input type="text" autocomplete="off" id="query" oninput="debounce(main, 1000)" placeholder="Search Movie">
+        <div id="movies"></div>
+        <div id="container"></div>
+    </div>
+</body>
+
+<script src="./script.js"></script>
+
+</html>
