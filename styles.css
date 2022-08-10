@@ -161,3 +161,44 @@ h1 {
 #trending:active {
     opacity: .5;
 }
+
+@media (max-width: 821px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    #mainbox {
+        background-size: 250% 100vh;
+        animation: slideLeft 2000s linear infinite;
+    }
+
+    #query {
+        width: 90%;
+        font-size: large;
+    }
+
+    #movies {
+        width: 90%;
+    }
+
+    #container {
+        gap: 25px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 430px) {
+    #mainbox {
+        height: 150vh;
+        background-size: 350% 150vh;
+        animation: slideLeft 2000s linear infinite;
+    }
+
+    #container {
+        gap: 25px;
+        width: 90%;
+        height: auto;
+        margin-bottom: 5vh;
+        flex-direction: column;
+    }
+}
