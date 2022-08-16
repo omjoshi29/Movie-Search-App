@@ -22,7 +22,7 @@ function getgenres(data) {
 
 function fetchtrending() {
   fetch(
-    `https://api.themoviedb.org/3/trending/all/week?api_key=f38264d734411d70ce25ec5340df0e04`
+    `https://api.themoviedb.org/3/trending/movie/week?api_key=f38264d734411d70ce25ec5340df0e04`
   )
     .then((response) => response.json())
     .then((data) => appendtrending(data.results))
