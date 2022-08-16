@@ -60,26 +60,6 @@ function appendmovies(data) {
       console.log(elem);
 
       movieDetails(elem.Title);
-
-      // movies.style.display = "none";
-
-      // container.innerHTML = null;
-
-      // console.log("obj:", obj);
-
-      // let Title = document.createElement("h3");
-      // Title.innerText = elem.Title;
-
-      // let Year = document.createElement("p");
-      // Year.innerText = elem.Year;
-
-      // let Poster = document.createElement("img");
-      // Poster.src = elem.Poster;
-
-      // let box = document.createElement("div");
-      // box.append(Poster, Title, Year);
-      // container.style.display = "block";
-      // container.append(box);
     });
   });
 }

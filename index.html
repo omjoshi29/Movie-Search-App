@@ -11,8 +11,11 @@
 </head>
 
 <body>
-    <!-- <center><button id="trending" onclick="window.open('trending.html','_self')">Trending Movies</button></center> -->
     <div id="mainbox">
+        <div id="navbar">
+            <h2>getmeCINEMA</h2>
+            <button id="trending" onclick="window.open('trending.html','_self')">Trending Movies</button>
+        </div>
         <h1>Search Movies</h1>
         <input type="text" autocomplete="off" id="query" oninput="debounce(main, 1000)" placeholder="Search Movie">
         <div id="movies"></div>

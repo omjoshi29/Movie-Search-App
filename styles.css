@@ -17,7 +17,7 @@ h1 {
 #mainbox {
     width: 100%;
     height: 100vh;
-    padding-top: 9vh;
+    padding-top: none;
     color: white;
     background-image: linear-gradient(rgba(15, 15, 15, 0.63), rgba(15, 15, 15, 0.63)),
         url("./moviesbg/4.jpg");
@@ -124,42 +124,54 @@ h1 {
     color: red;
 }
 
-#trending {
-    margin-top: 30px;
-    width: 50%;
-    background: #FF4742;
-    border: 1px solid #FF4742;
-    border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-    box-sizing: border-box;
-    color: #FFFFFF;
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: none;
+    padding: 2vh;
+    margin-bottom: 3vh;
+    background-image: linear-gradient(rgba(15, 15, 15, 0.78), rgba(15, 15, 15, 0.78));
+}
+
+#navbar>h2:hover,
+#trending:hover {
+    color: red;
     cursor: pointer;
-    display: inline-block;
-    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 16px;
-    min-height: 40px;
-    outline: 0;
-    padding: 12px 14px;
-    text-align: center;
-    text-rendering: geometricprecision;
-    text-transform: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: middle;
+}
+
+#trending {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bold;
 }
 
 #trending:hover,
 #trending:active {
-    background-color: initial;
-    background-position: 0 0;
-    color: #FF4742;
+    color: red;
 }
 
-#trending:active {
-    opacity: .5;
+#trendingdiv {
+    display: grid;
+    width: 90%;
+    gap: 6vh;
+    margin: auto;
+    margin-bottom: 9vh;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#trendingdiv>div {
+    min-width: 50%;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+}
+
+#trendingdiv>div>img {
+    height: 360px;
 }
 
 @media (max-width: 821px) {
@@ -185,6 +197,16 @@ h1 {
         gap: 25px;
         width: 90%;
     }
+
+    #trendingdiv {
+        margin-top: 90px;
+        margin-bottom: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #trendingdiv>div {
+        margin-top: -30px;
+    }
 }
 
 @media (max-width: 430px) {
@@ -200,5 +222,25 @@ h1 {
         height: auto;
         margin-bottom: 5vh;
         flex-direction: column;
+    }
+
+    #trendingdiv {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #trendingdiv>div {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 96%;
+        margin: auto;
+        margin-top: 0px;
+        background-image: linear-gradient(rgba(15, 15, 15, 0.78), rgba(15, 15, 15, 0.78));
+    }
+
+    #trendingdiv>div>img {
+        width: 100%;
     }
 }
